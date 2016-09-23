@@ -1,6 +1,7 @@
 import urllib
 import urllib2 
 
+'''
 password_mgr = urllib2.HTTPPasswordMgrWithDefaultRealm()
 top_level_url = 'http://example.com/foo/'
 password_mgr.add_password(None, top_level_url,'why', '1223') 
@@ -12,10 +13,10 @@ urllib2.install_opener(opener)
 
 
 '''
-old_url = 'http://www.baidu.com'
-req = Request(old_url)
-respone = urlopen(req)
-print respone.info()
+old_url = 'https://thinkjs.org/zh-cn/doc/2.2/index.html'
+req = urllib2.Request(old_url)
+respone = urllib2.urlopen(req)
+print respone.read()
 
 
 url = 'http://ndapi.bestinfoods.com/market/get/ad'
@@ -34,7 +35,6 @@ except urllib2.URLError, e:
 
 html = respone.read()
 print html
-'''
 
 '''
 req = Request('http://bbs.csdn.net/callmewhy')
