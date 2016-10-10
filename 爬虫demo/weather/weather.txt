@@ -1,0 +1,20 @@
+city:杭州
+
+date:10-08		day:多云( 17°C)		night:阴
+
+date:10-09		day:多云(22°C )		night:多云
+
+date:10-10		day:多云(21°C )		night:多云
+
+date:10-11		day:多云(22°C )		night:多云
+
+date:10-12		day:多云(23°C )		night:多云
+
+date:10-13		day:阴(23°C )		night:多云
+
+date:10-14		day:多云(22°C )		night:阴
+
+date:10-15		day:阴天(24°C )		night:局部多云
+
+date:10-16		day:阴天(26°C )		night:阴天
+
