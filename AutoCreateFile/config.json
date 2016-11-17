@@ -1,0 +1,13 @@
+{
+	"header": {
+		"Author": "jiao.shen<1228812528@qq.com>",
+		"GitHub": "https://github.com/wangasi"
+	},
+	"body": {
+		"componentWillMount": true,
+		"componentWillUnmount": true,
+		"componentDidMount": false
+	}
+}
+
+
