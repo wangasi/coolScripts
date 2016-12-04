@@ -14,7 +14,8 @@ def Version():
     print 'AutoCreateFile.py 0.0.1'
 
 def GetTextFromConfig(path,desc):
-	name = path[:-3]
+	path = path[:-3].split('/')
+	name = path[len(path)-1]
 	content = "/**\n * @FileName: "+name+"\n * @Description: "+desc+"\n"
 	textDict = []
 	try:
@@ -31,7 +32,7 @@ def GetTextFromConfig(path,desc):
 			header = textDict["header"]
 			for eatch in header:
 				content += " * @"+eatch+": " + header[eatch] + "\n"
-
+				
 		content += " * @Create: " + time.strftime('%Y-%m-%d %H:%M:%S') + "\n */\n"
 		content += "import React, { Component } from \'react\';\n"
 		content += "import {\n  AppRegistry,\n  Text,\n  View\n} from \'react-native\';\n\n"
